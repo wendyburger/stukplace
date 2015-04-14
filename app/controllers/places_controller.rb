@@ -12,6 +12,8 @@ class PlacesController < ApplicationController
   # GET /places/1
   # GET /places/1.json
   def show
+    @reviews = @place.reviews
+    @review = Review.new
   end
 
   # GET /places/new
